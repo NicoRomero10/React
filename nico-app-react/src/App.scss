@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px, 40px;
+  &__logo{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    height: auto;
+  }
+  &__nav{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    &-item{
+      color: #121212;
+      font-weight: 600;
+    }
+  }
+  &__buttons{
+    button{
+      font-size: 16px;
+      padding: 5px, 10px;
+    }
+  }
+}
+
+.products{
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.card{
+  width: 150px;
+  height: max-content;
+  background: rgb(19, 63, 182);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  &__name{
+    font-size: 20px;
+    color: white;
+  }
+  &__price{
+    font-size: 25px;
+    color: rgb(238, 238 , 238);
+  }
+  &__description{
+    color: white;
+  }
+  &__srock{
+    color: white;
+  }
+}
+
+.footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #121212;
+  &__item{
+    font-size: 14px;
+    color: white;
+}
+}
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
