@@ -34,7 +34,7 @@ function App() {
 
             <div className='promo'>
               <h2>LO MEJOR EN CALZADO PARA LA FAMILIA</h2>
-              <button className='promo__button'>DESCUBRISLOS TODOS {"->"}</button>
+              <button className='promo__button'>DESCUBRILOS TODOS {"->"}</button>
             </div>
               
           </div>
