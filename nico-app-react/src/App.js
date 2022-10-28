@@ -1,47 +1,24 @@
 
-import AppContainer from './components/AppContainer';
-import Navbar from './components/Navbar';
-import ItemListContainer from './components/ItemListContainer';
-import Button from './components/Button';
-import Item from './components/Item';
+
+// import Button from './components/Button';
+
 import './App.scss';
-import Banner from './components/Banner'
-import Footer from './components/Footer'
-import { BsFillCartCheckFill } from "react-icons/bs";
 
-import logo from './logo.svg';
-
-import Tag from "./components/Tags";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home } from '././pages/Home';
 
 function App() {
   const precio = 4299;
   return (
     <div className="App">
+      <BrowserRouter>
+      <Routes>
+        <Route path={"/"} element={<Home />} />
+      </Routes>
+      </BrowserRouter>
       
 
-      <Button >Agregar al carrito</Button>
-
-      <Navbar />
-      <ItemListContainer saludo="Bienvenidos a MODO MUNDIAL" />
-
-      <BsFillCartCheckFill />
-      
-      <Banner promocion="ÚNETE AL CLUB Y CONSIGUE 15% DE DESUENTO" />
-      <main className='content'>
-          <AppContainer />
-
-          <div className='products'>
-
-            <div className='promo'>
-              <h2>LO MEJOR EN CALZADO PARA LA FAMILIA</h2>
-              <button className='promo__button'>DESCUBRILOS TODOS {"->"}</button>
-            </div>
-              
-          </div>
-          
-        </main>
-        <Footer />
-      
+      {/* <Button >Agregar al carrito</Button> */}
     </div>
   );
 }
@@ -49,6 +26,58 @@ function App() {
 export default App;
 
 
+
+//----------------------------------------------------
+
+// PRACTICA DE "PROMISE (PROMESAS)"
+
+// const voyALlegar = () => new Promise((res,rej)=>{
+//   let llego = Math.random() > 0.5;
+//   setTimeout(()=>{
+//     if (llego) res("Lo atendemos")
+//     rej("Liberamos la mesa") 
+//   }, 3000)
+// })
+
+// voyALlegar()
+// .then(res => console.log(res))
+// .catch(error =>console.log(error))
+// .finally(() => console.log("Seguir atendiendo"))
+
+
+// CREAR UNA PROMESA QUE RETORNE UN OBJETO DE UN PRODUCTO
+
+
+
+// let nuevoArray = products.map(
+//   (item, index)=> ({...item, id: index})
+// )
+
+// console.log(nuevoArray);
+
+
+
+// // const getProducts = () => 
+// //   new Promise((res,rej)=> {
+// //   setTimeout(()=>{
+// //     res(products);
+// //   }, 3000)
+// // });
+
+// getProducts()
+// .then(e => console.log(e))
+// .catch(error =>console.log(error))
+// .finally(() => console.log("Seguir atendiendo"))
+
+
+/*  {
+  id: 1,
+  nobre : Zapa,
+  precio: 400,
+  descripcion: naranja y blanca,
+  stock: 10,
+}
+*/
 
 
       {/* <Tag titulo="Envio gratis" />
